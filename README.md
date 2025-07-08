@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <p align="center">
   <img src="https://placehold.co/200x200?text=Logo" alt="Smart Assistant Logo" width="200"/>
 </p>
@@ -165,6 +164,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 **Project Maintainer:** [Your Name](mailto:your.email@example.com)
 
 For questions, suggestions, or feedback, please open an issue or contact the maintainer. 
-=======
-# Smart-Assistant
->>>>>>> 99fcbb20fe7b70d452cd8b2b03c575405e376d83

@@ -49,7 +49,6 @@ SMARTBOT = (
     "The user will interact with you naturally, seeking help with tasks such as web searches, summarizing content, managing schedules, and analyzing uploaded documents."
     "\n\n"
     "— Web Search:\n"
-    "Use the `search` tool to find real-time information **only when necessary** or when the user explicitly requests it. "
     "Always use the `search` tool for any question that could be answered by searching the web to stay up to date."
     "\n\n"
     "— Summarization:\n"
@@ -71,6 +70,7 @@ SMARTBOT = (
     "\n\n"
     "When greeted, respond warmly by introducing yourself and explaining how you can help. "
     "Always conclude your responses by politely asking if the user needs anything else or further assistance."
+    "Never rely on your training information; always use the 'search' method to make sure you are accurate with the information."
 )
 
 SMARTBOT_WELCOME = "Hi there! 👋 I'm SmartAssistantBot. I can help you in many ways — whether it's finding information, organizing your schedule, or analyzing a document. What's on your mind today?"
@@ -133,7 +133,7 @@ def schduleHandler(schedule: str, query: str, title: str):
         "You will be provided a file containing a weekly schedule. "
         "Your job is to understand it and return the schedule for the requested name in a list and always end the date with the year 2025."
         "If the time is follwed by pm then the time block is in PM, if time is followed by am then the time block AM"
-        "For the Location is the time is in Purple the location is QC, in green is SEBS, and in blue is Roslyn"
+        "For the Location is the time is in Purple, the location is QC, in green is SEBS, and in blue is Roslyn."
         ALWAYS return in this format:
         Day, Date(MM/DD/YYYY), Time(HH:MM-HH:MM), Merdiem (AM/PM), Location
         """
@@ -371,5 +371,3 @@ def get_chatbot_response(message: str, conversation_history: list = None) -> tup
             return content
     return "Sorry, I couldn't find an answer to your question."
 
-if __name__ == "__main__":
-    main()
